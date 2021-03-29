@@ -42,7 +42,7 @@ $(document).ready(function(){
 
     var datos = (formdata ? formdata : form.serialize());
     
-    alert(form.serialize());
+    //alert(form.serialize());
     //alert("Tipo: "+tipo+", Accion: "+accion+", Metodo: "+metodo+", Formulario: "+datos);
     if (option==2) {
       if(confirm("¿Estas seguro de modificar este registro?")){
@@ -103,7 +103,7 @@ $(document).ready(function(){
         success: function(data){
         
           rpta.html(data);
-          alert(data);
+          //alert(data);
         },
         error: function(){
           rpta.html(msjError);
